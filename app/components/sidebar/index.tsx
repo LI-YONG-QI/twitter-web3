@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import News from "../home/news";
+import News from "./news";
+import Follower from "./follower";
 
 const Sidebar = () => {
   return (
@@ -21,6 +22,13 @@ const Sidebar = () => {
         </div>
       </section>
       <News />
+      <Follower />
+      <article>
+        <p className="text-subMain text-xs font-medium">
+          Terms of Service Privacy Policy Cookie Policy Ads info More © 2021
+          Twitter, Inc.
+        </p>
+      </article>
     </div>
   );
 };

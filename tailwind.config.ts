@@ -23,6 +23,9 @@ const config: Config = {
         main: "598px",
         sidebar: "350px",
       },
+      height: {
+        btn: "30px",
+      },
       borderWidth: {
         1: "1px",
       },

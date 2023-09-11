@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Item from "./item";
 import { PROFILE_IMAGE } from "../../../utils/constants";
+import { ConnectKitButton } from "connectkit";
 
 const Navigator = () => {
   return (
@@ -23,9 +25,10 @@ const Navigator = () => {
           <Item image="/images/more.svg" title="More" />
         </div>
         <div className="my-4">
-          <button className="bg-main py-4 px-24 rounded-full">
+          {/* <button className="bg-main py-4 px-24 rounded-full">
             <p className="font-bold text-white text-base"> Tweet </p>
-          </button>
+          </button> */}
+          <ConnectKitButton />
         </div>
       </section>
       <div className="pb-5 flex justify-between items-center">
