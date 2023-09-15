@@ -14,17 +14,18 @@ export default function App() {
       appName: "Twitter Web3",
       chains,
       autoConnect: true,
-      walletConnectProjectId: "123",
+      walletConnectProjectId: process.env.NEXT_PUBLIC_PROJECT_ID || "",
+      alchemyId: process.env.NEXT_PUBLIC_RPC_KEY || "",
     })
   );
   return (
     <WagmiConfig config={config}>
       <ConnectKitProvider>
-        <main className="flex justify-center">
+        <div className="flex justify-center">
           <Navigator />
           <Home />
           <Sidebar />
-        </main>
+        </div>
       </ConnectKitProvider>
     </WagmiConfig>
   );

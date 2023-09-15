@@ -14,15 +14,23 @@ const config: Config = {
         profileMain: "#0F1419",
         dark7: "#EBEEF0",
         dark8: "#F7F9FA",
+        dark5: "#5B7083",
       },
       letterSpacing: {
         tighter: "-0.272px",
         header: "0.28px",
       },
       width: {
+        72: "72px",
         main: "598px",
+        235: "235px",
+        255: "255px",
         sidebar: "350px",
       },
+      margin: {
+        375: "375px",
+      },
+
       height: {
         btn: "30px",
       },

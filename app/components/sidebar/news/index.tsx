@@ -1,4 +1,5 @@
 import React from "react";
+import Item from "./item";
 
 const News = () => {
   return (
@@ -8,9 +9,9 @@ const News = () => {
           {"What’s happening"}
         </p>
       </header>
-      <article className="px-4 py-2.5 border-b-dark border-b-1">
-        Fake news
-      </article>
+      <Item />
+      <Item />
+      <Item />
       <footer className="p-4">
         <p className="text-main text-base font-medium">Show more</p>
       </footer>

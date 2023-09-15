@@ -7,7 +7,7 @@ import { ConnectKitButton } from "connectkit";
 
 const Navigator = () => {
   return (
-    <nav className="flex flex-col justify-between h-screen w-72 px-2.5 ml-20 border-r-dark border-r-1">
+    <nav className="flex flex-col justify-between h-screen px-2.5 top-0 sticky border-r-dark border-r-1 w-72 xl:w-255">
       <section>
         <div className="p-2.5">
           <div className="w-7 h-7">
@@ -40,20 +40,22 @@ const Navigator = () => {
             width="39"
             height="39"
           />
-          <div>
+          <div className="hidden xl:block">
             <p className="text-base font-bold text-profileMain">Jerome Bell</p>
             <p className="text-base text-subMain font-medium tracking-tighter">
               @afonsoinocente
             </p>
           </div>
         </section>
-        <div className="w-8 h-8 flex justify-center items-center">
-          <Image
-            src="/images/profile-more.svg"
-            alt="more"
-            width="20"
-            height="5"
-          />
+        <div className="hidden xl:block">
+          <div className="w-8 h-8 flex justify-center items-center ">
+            <Image
+              src="/images/profile-more.svg"
+              alt="more"
+              width="20"
+              height="5"
+            />
+          </div>
         </div>
       </div>
     </nav>
