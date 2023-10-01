@@ -2,12 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import Item from "./item";
-import { PROFILE_IMAGE } from "../../../utils/constants";
+import { PROFILE_IMAGE } from "@/utils/constants";
 import { ConnectKitButton } from "connectkit";
+import { useAccount } from "wagmi";
 
 const Navigator = () => {
   return (
-    <nav className="flex flex-col justify-between h-screen px-2.5 top-0 sticky border-r-dark border-r-1 w-72 xl:w-255">
+    <nav className="col-start-1 col-end-2 flex flex-col justify-between h-screen sticky left-[130px] top-0 w-72 xl:w-255">
       <section>
         <div className="p-2.5">
           <div className="w-7 h-7">
@@ -15,19 +16,16 @@ const Navigator = () => {
           </div>
         </div>
         <div>
-          <Item image="/images/group.svg" title="Home" />
-          <Item image="/images/explore.svg" title="Explore" />
-          <Item image="/images/notification.svg" title="Notifications" />
-          <Item image="/images/msg.svg" title="Message" />
-          <Item image="/images/bookmark.svg" title="Bookmarks" />
-          <Item image="/images/list.svg" title="List" />
-          <Item image="/images/profile.svg" title="Profile" />
-          <Item image="/images/more.svg" title="More" />
+          <Item image="/images/group.svg" title="home" />
+          <Item image="/images/explore.svg" title="explore" />
+          <Item image="/images/notification.svg" title="notifications" />
+          <Item image="/images/msg.svg" title="message" />
+          <Item image="/images/bookmark.svg" title="bookmarks" />
+          <Item image="/images/list.svg" title="list" />
+          <Item image="/images/profile.svg" title="profile" />
+          <Item image="/images/more.svg" title="more" />
         </div>
         <div className="my-4">
-          {/* <button className="bg-main py-4 px-24 rounded-full">
-            <p className="font-bold text-white text-base"> Tweet </p>
-          </button> */}
           <ConnectKitButton />
         </div>
       </section>

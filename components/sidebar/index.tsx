@@ -5,7 +5,7 @@ import Follower from "./follower";
 
 const Sidebar = () => {
   return (
-    <div className="w-sidebar">
+    <div className="w-sidebar col-span-2">
       <section className="mt-2.5 mb-4">
         <div className=" w-full rounded-full py-2.5 px-4 bg-dark7 flex flex-row">
           <Image
